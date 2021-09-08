@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  
+  <div id="title">PhD Contributions</div>
+  
+    <div class="container" style="text-align: center;">
+      <nav>
+        <button type="button" data-filter="all">All</button>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+        <button type="button" data-toggle=".software">Software</button>
+        <button type="button" data-toggle=".corpora">Corpora</button>
+        <!--button type="button" data-toggle=".papers">Papers</button-->
+        <button type="button" data-toggle=".other">Other</button>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+        <button type="button" data-toggle=".time">Time</button>
+        <button type="button" data-toggle=".event">Events</button>
+        <button type="button" data-toggle=".legal">Legal</button>
+        <button type="button" data-toggle=".sa">Sentiment Analysis</button>
+      </nav>
+	  
+	  <div id="overlay"></div>
+	  <div class="cardhold">
+
+      <div class="card mix software legal">
+        <h3>LawORDate</h3>
+		<div class="inter">
+        <img src="./logos/LawORDate2.png" alt="" style="max-width: 140%;">
+		</div>
+		<h4>LawORDate is a service that handles legal references in texts in Spanish in order to improve temporal tagging.</h4>
+      </div>
+
+      <div class="card mix software time">
+        <h3>Añotador</h3>
+		<div class="inter">
+        <img src="./logos/añotador.png" alt="">
+		</div>
+		<h4>Añotador is a temporal tagger for English and Spanish able to work both for general or legal texts.</h4>
+      </div>
+
+      <div id="d" class="card mix software event legal">
+        <h3>WhenTheFact</h3>
+		<div class="inter">
+        <img src="./logos/wtf.png" alt="">
+		</div>
+		<h4>WhenTheFact is finds relevant events in judgments from European Courts, building a timeline from them.</h4>
+      </div>
+
+      <div class="card mix corpora event legal">
+        <h3>EventsMatter Corpus</h3>
+		<div class="inter">
+        <img src="./logos/eventsmatter.png" alt="">
+		</div>
+		<h4>EventsMatter is a corpus of courts from the European COurt of Human Rights annotated with events.</h4>
+      </div>
+
+      <div class="card mix other time event legal">
+        <h3>TimeLex</h3>
+		<div class="inter">
+        <img src="./logos/timelex2.png" alt="">
+		</div>	 
+		<h4>TimeLex is a suite of services for processing texts in the legal domain from the temporal perspective.</h4>
+      </div>
+
+      <div class="card mix sa corpora">
+        <h3>SAB/MAS corpus</h3>
+		<div class="inter">
+        <img src="./logos/sab.png" alt="">
+		</div>	 
+		<h4>Corpus of tweets in Spanish annotated with emotions and their stage within the purchase funnel.</h4>
+      </div>
+
+      <div class="card mix sa other">
+        <h3>SAB vocabulary</h3>
+		<div class="inter">
+        <img src="./logos/sabvoc.png" alt="" style="max-width: 90%;">
+		</div>	 
+		<h4>Vocabulary of the different aspects and emotions used to annotate the MAS and the SAB corpora.</h4>
+      </div>
+
+      <div class="card mix time corpora legal">
+        <h3>TempCourt corpus</h3>
+		<div class="inter">
+        <img src="./logos/tempcourt.png" alt="">
+		</div>	 
+		<h4>Corpus of legal decisions from three different sources in English annotated with temporal expressions.</h4>
+      </div>
+
+      <div class="card mix corpora time">
+        <h3>Hourglass corpus</h3>
+		<div class="inter">
+        <img src="./logos/hourglass.png" alt="">
+		</div>	 
+		<h4>Dataset of sentences in Spanish from different registries and countries annotated with temporal expressions.</h4>
+      </div>
+
+      <div class="card mix software event legal">
+        <h3>ContractFrames</h3>
+		<div class="inter">
+        <img src="./logos/cf.png" alt="" style="max-width: 80%;">
+		</div>	 
+		<h4>Tool able to extract events from English texts presenting the lifeycle of real-state contracts.</h4>
+      </div>
+
+      <div class="card mix other event">
+        <h3>fromTimeToTime Ontology</h3>
+		<div class="inter">
+        <img src="./logos/ft3.png" alt="">
+		</div>	 
+		<h4>Ontology able to represent and link different time and event annotation formats and representation options.</h4>
+      </div>	  
+
+      <div class="card mix software event">
+        <h3>FromTimeToTime converter</h3>
+		<div class="inter">
+        <img src="./logos/conv.png" alt="">
+		</div>	 
+		<h4>Tool able to transform texts annotated with temporal expressions to linked data formats.</h4>
+      </div>
+	  
+    </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+	
+$(".card").hover( 
+  function () {    
+    $(".card").addClass("over");
+    $(this).removeClass("over");
+    console.log("HOLA");
+  }, 
+  function () {
+     $(".card").removeClass("over");
+    console.log("ADIOS");
+  }
+);
+
+	</script>
+
+
+    <script src="./mixitup.min.js" charset="utf-8"></script>
+    <script src="./main.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+body{
+  
+  font-family: Roboto, Arial, Helvetica;
+}
+nav{
+  text-align: center;
+}
+
+.transp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #eee;
+  opacity:50%;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#ai a:link {
+  color: #444444;
+  text-decoration: underline;
+}
+
+#ai a:visited {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("photo.jpg");
+  background-color: #eee;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button{
+  /*border: none;
+  background-color: #eee;
+  color:#222;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  padding:10px;
+  border-radius:2px;
+  font-size:1.5em;
+  transition: all 0.4s;
+  cursor: pointer;*/
+  border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  
+}
+button.mixitup-control-active{
+  /*background-color: rgb(50,200,50);*/
+  background-color: darkgray;
+  box-shadow: 0px 7px 12px rgba(0,0,0,0.45);
+}
+
+
+.card{
+  display: inline-block;
+  padding: 7px;
+  border-radius:2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  width:300px;
+  height: 400px;
+  text-align: center;
+  color:#eee;
+  background: #222;
+  margin-top:1em;
+  margin-right: 1em;
+  -webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
+			
+}
+
+
+/*div.cardhold:hover .card{
+			filter:blur(2px);
+	    }*/
+		
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px 0 rgb(0, 0, 0), 0 20px 100px 0 rgb(255, 255, 255);
+  filter:blur(0px) !important;
+}
+
+.over{
+	filter:blur(2px);
+}
+	    
+
+
+.card .inter{
+  height: 230px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+
+.card h4{
+  padding: 5px;
+}
+
+.w3-xlarge {
+    font-size: 24px !important;
+	font-weight: 400;
+}
+
+.w3-large{}
+h1 {
+line-height: 1.5;}
+
+.w3-center {
+    text-align: center !important;
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3-bar .w3-button {
+    white-space: normal;
+	font-size: 16px
+}
+.w3-bar .w3-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.w3-opacity, .w3-hover-opacity:hover {
+    opacity: 0.60;
+}
+.w3-panel {
+}
+
+.w3-padding-32 {
+    padding-top: 62px !important;
+    padding-bottom: 2px !important;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.w3-center .w3-bar {
+    display: inline-block;
+    width: auto;
+}
+.w3-border {
+    border: 1px solid #ccc !important;
+}
+.w3-bar {
+    width: 100%;
+    overflow: hidden;
+}
+
+
