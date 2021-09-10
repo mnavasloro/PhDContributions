@@ -40,10 +40,13 @@ a:link, a:visited {
   background-image: url("photo.jpg");
   background-color: #eee;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+  /* Center and scale the image nicely
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+   background-size: 3472px 2248px;
+   background-position-x: center;
+  position: absolute;
 }
 
 button{
@@ -88,25 +91,27 @@ button.mixitup-control-active{
   background: #222;
   margin-top:1em;
   margin-right: 1em;
-  -webkit-transition: all 0.2s ease;
-			-moz-transition: all 0.2s ease;
-			-o-transition: all 0.2s ease;
+			-webkit-transition: all 0s ease;
+			-moz-transition: all 0s ease;
+			-o-transition: all 0s ease;
 			
 }
 
-
-/*div.cardhold:hover .card{
-			filter:blur(2px);
-	    }*/
 		
 .card:hover{
   transform: scale(1.05);
   box-shadow: 0 20px 50px 0 rgb(0, 0, 0), 0 20px 100px 0 rgb(255, 255, 255);
   filter:blur(0px) !important;
+    -webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
 }
 
 .over{
 	filter:blur(2px);
+	    -webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
 }
 	    
 

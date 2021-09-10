@@ -1,10 +1,10 @@
 (function(){
   mixitup(".container",{
     "animation": {
-        "duration": 250,
+        "duration": 450,
         "nudge": true,
         "reverseOut": true,
-        "effects": "fade rotateY(90deg) stagger(30ms)"
+        "effects": "fade translateZ(-100px)"
     }
   });
 })()
